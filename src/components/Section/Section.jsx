@@ -7,9 +7,6 @@ class Section extends Component {
     title: PropTypes.string.isRequired,
   };
 
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { title, children } = this.props;
     return (

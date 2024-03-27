@@ -8,10 +8,6 @@ class FeedbackOptions extends Component {
     onLeaveFeedback: PropTypes.func.isRequired,
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { options } = this.props;
     const clicked = this.props.onLeaveFeedback;

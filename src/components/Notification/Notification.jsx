@@ -7,10 +7,6 @@ class Notification extends Component {
     title: PropTypes.string.isRequired,
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { title } = this.props;
     return (

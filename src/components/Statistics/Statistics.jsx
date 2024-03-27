@@ -11,10 +11,6 @@ class Statistics extends Component {
     positivePercentage: PropTypes.number.isRequired,
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { good, neutral, bad } = this.props;
     const { total, positivePercentage } = this.props;
