@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import css from './FeedbaclOptions.module.css';
 
 class FeedbackOptions extends Component {
+  static propTypes = {
+    options: PropTypes.object.isRequired,
+    onLeaveFeedback: PropTypes.func.isRequired,
+  };
+
   constructor(props) {
     super(props);
   }

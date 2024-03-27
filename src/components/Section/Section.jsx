@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import css from './Section.module.css';
 
 class Section extends Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+  };
+
   constructor(props) {
     super(props);
   }
