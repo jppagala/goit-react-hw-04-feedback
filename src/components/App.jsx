@@ -26,7 +26,7 @@ class App extends Component {
     const goodCount = this.state.good;
     const totalFeedback = this.countTotalFeedback();
 
-    if (totalFeedback == 0) {
+    if (totalFeedback === 0) {
       return 0;
     }
     return Math.round((goodCount / totalFeedback) * 100);
@@ -70,14 +70,6 @@ class App extends Component {
       </div>
     );
   }
-}
-
-{
-  /* <Section>
-  <FeedbackOptions options={} onLeaveFeedback={}/>
-  {total > 0 ? <Statistics good={} neutral={} bad={} total={}{' '}
-        positivePercentage={}/> : <Notification />}
-</Section>; */
 }
 
 export default App;
