@@ -9,7 +9,6 @@ class FeedbackOptions extends Component {
   };
 
   render() {
-    const { options } = this.props;
     const clicked = this.props.onLeaveFeedback;
     // console.log(clicked);
 
