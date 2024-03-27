@@ -1,0 +1,9 @@
+.notificationContainer {
+  margin-top: 25px;
+}
+
+.notification {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
