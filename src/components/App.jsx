@@ -56,7 +56,7 @@ const App = () => {
             positivePercentage={countPositiveFeedbackPercentage()}
           />
         ) : (
-          <Notification title={'No feedback given'} />
+          <Notification title={'No feedback given.'} />
         )}
       </Section>
     </div>
