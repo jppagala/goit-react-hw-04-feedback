@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import css from './Notification.module.css';
 
-class Notification extends Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-  };
+const Notification = ({ title }) => {
+  return (
+    <div className={css.notificationContainer}>
+      <p className={css.notification}>{title}</p>
+    </div>
+  );
+};
 
-  render() {
-    const { title } = this.props;
-    return (
-      <div className={css.notificationContainer}>
-        <p className={css.notification}>{title}</p>
-      </div>
-    );
-  }
-}
+Notification.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Notification;
